@@ -1,0 +1,12 @@
+import { handleActions } from 'redux-actions'
+import ACTIONS from 'constants/actionConstants.js'
+const defaultState = {
+  data: []
+}
+
+export default handleActions({
+  [ACTIONS.TEST]: (state, { payload }) => {
+    return { ...state}
+  }
+
+}, defaultState)
