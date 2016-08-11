@@ -1,29 +1,37 @@
 {
   "parser"  : "babel-eslint",
-  "extends" : [
-    "standard",
-    "standard-react"
-  ],
-  "plugins": [
-    "babel",
-    "react",
-    "promise"
-  ],
+  "extends": "airbnb",
   "env"     : {
     "browser" : true
   },
   "globals" : {
     "__DEV__"      : false,
     "__PROD__"     : false,
+    "__TEST__"     : false,
     "__DEBUG__"    : false,
-    "__COVERAGE__" : false,
+    "__DEBUG_NEW_WINDOW__" : false,
     "__BASENAME__" : false
   },
   "rules": {
+     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "comma-dangle": 0,
+    "react/sort-comp": 0,
     "semi" : [2, "never"],
-    "max-len": [2, 120, 2],
-    "generator-star-spacing": 0,
-    "babel/generator-star-spacing": 1,
-    "jsx-quotes": [2, "prefer-single"]
+    "max-len": [2, 160, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false
+    }],
+    "prefer-rest-params": 0,
+    "yoda": 0,
+    "import/no-unresolved": 0,
+    "one-var-declaration-per-line": 0,
+    "no-use-before-define": 0,
+    "no-unexpected-multiline": 2,
+    "object-curly-spacing": [2, "always"],
+    "space-before-function-paren": [2, { "anonymous": "never", "named": "always" }],
+    "jsx-quotes": [2, "prefer-single"],
+    "no-return-assign": 0,
+    "no-underscore-dangle": 0,
+    "no-param-reassign": 0
   }
 }
