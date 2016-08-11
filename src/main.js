@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux';
 import { Router, Route, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux'
-import createStore from './store/createStore'
+import createStore from './redux/store/createStore'
 import AppContainer from './containers/AppContainer'
 
 
@@ -22,9 +22,7 @@ if (__DEBUG__) {
 const MOUNT_NODE = document.getElementById('root')
 
 let render = () => {
-debugger
   ReactDOM.render(
-
       <Provider store={store}>
       <Router history={history}>
         <Route path='/' component={AppContainer}>

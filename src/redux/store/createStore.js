@@ -20,7 +20,7 @@ export default (initialState = {}, history) => {
   const store = createStore(reducers, initialState, enhancer);
 
   if (module.hot) {
-    module.hot.accept('store/reducers', () => {
+    module.hot.accept('redux/store/reducers', () => {
       const nextRootReducer = reducers.default
       store.replaceReducer(nextRootReducer)
     })

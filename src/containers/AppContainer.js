@@ -4,8 +4,10 @@ import React, { Component, PropTypes } from 'react'
 class AppContainer extends Component {
 
 
+
   render () {
-    const { history, routes, store } = this.props
+
+    console.dir(this)
 
     return (
       <div>{'JOPA !!!'}</div>
