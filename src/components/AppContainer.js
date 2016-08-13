@@ -18,7 +18,6 @@ const AppContainer = () => (
   </div>
 );
 
-
 AppContainer.propTypes = {
   location: PropTypes.object
 };
