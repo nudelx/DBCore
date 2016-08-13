@@ -1,5 +1,5 @@
 const ACTIONS = {
-    TEST: 'TEST'
-}
+  TEST: 'TEST'
+};
 
 export default ACTIONS;

@@ -13,15 +13,16 @@
     "__BASENAME__" : false
   },
   "rules": {
-     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "comma-dangle": 0,
     "react/sort-comp": 0,
-    "semi" : [2, "never"],
+    # "semi" : [2, "never"],
     "max-len": [2, 160, 2, {
       "ignoreUrls": true,
       "ignoreComments": false
     }],
     "prefer-rest-params": 0,
+    "react/require-extension": 0,
     "yoda": 0,
     "import/no-unresolved": 0,
     "one-var-declaration-per-line": 0,
