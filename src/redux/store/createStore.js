@@ -1,9 +1,8 @@
-import { applyMiddleware, compose, createStore } from 'redux'
-import { routerMiddleware } from 'react-router-redux'
-import reducers from './reducers'
+import { applyMiddleware, compose, createStore } from 'redux';
+import { routerMiddleware } from 'react-router-redux';
+import reducers from './reducers';
 // console.log('red', reducers)
 export default (initialState = {}, history) => {
-
   const enhancer = compose(
     // Middleware you want to use in development:
     applyMiddleware(
@@ -21,10 +20,10 @@ export default (initialState = {}, history) => {
 
   if (module.hot) {
     module.hot.accept('redux/store/reducers', () => {
-      const nextRootReducer = reducers.default
-      store.replaceReducer(nextRootReducer)
-    })
+      const nextRootReducer = reducers.default;
+      store.replaceReducer(nextRootReducer);
+    });
   }
 
-  return store
-}
+  return store;
+};
