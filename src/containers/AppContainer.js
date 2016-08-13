@@ -12,7 +12,7 @@ class AppContainer extends Component {
 
   render () {
     return (
-      <div>{'JOPA !!!'}</div>
+      <div>{'env is ready for dev '}</div>
     );
   }
 }
