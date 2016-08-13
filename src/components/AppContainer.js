@@ -1,20 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 
+const AppContainer = ({ location }) => (
+  <div>{`current pah is ${location.pathname}`}</div>
+);
 
-class AppContainer extends Component {
-  static propTypes = {
-    pathname: PropTypes.object
-  };
-
-  componentWillMount () {
-    console.dir(this.props) // eslint-disable-line
-  }
-
-  render () {
-    return (
-      <div>{'env is ready for dev '}</div>
-    );
-  }
-}
-
+AppContainer.propTypes = {
+  location: PropTypes.object
+};
 export default AppContainer;
