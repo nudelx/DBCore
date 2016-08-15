@@ -8,7 +8,9 @@ import config from '../config';
 const debug = _debug('app:webpack:config');
 const paths = config.utils_paths;
 const { __DEV__, __PROD__, __TEST__ } = config.globals;
-
+console.log("SSSSS=> ", paths.base(config.dir_client));
+console.log("SSSSS=> ", paths.client());
+console.log("SSSSS=> ", config.dir_client);
 debug('Create configuration.');
 const webpackConfig = {
   name: 'client',
